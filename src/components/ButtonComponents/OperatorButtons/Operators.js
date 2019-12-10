@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import OperatorButton from './OperatorButton';
 //import any components needed
 
@@ -7,6 +7,8 @@ import {operators} from '../../../data';
 
 const Operators = (props) => {
   // STEP 2 - add the imported data to state
+  const [calOperators, setOperation]= useState(operators);
+  
   return (
     <div>
       {operators.map(operator => 
